@@ -1,0 +1,14 @@
+name: ragvenv
+channels:
+ - defaults
+dependencies:
+- python=3.11
+- streamlit
+- langchain
+- langchain-community
+- langchain-google-genai
+- google-generativeai
+- faiss-cpu
+- beautifulsoup4
+- requests
+- lxml

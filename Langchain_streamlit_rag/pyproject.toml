@@ -1,0 +1,17 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Langchain Streamlit Rag App"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+"streamlit",
+"langchain",
+"langchain-community",
+"langchain-google-genai",
+"google-generativeai",
+"faiss-cpu",
+"beautifulsoup4",
+"requests",
+"lxml"
+]
