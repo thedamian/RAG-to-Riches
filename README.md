@@ -6,4 +6,4 @@
 - [Google Slides](https://docs.google.com/presentation/d/1KPNZQNOGFbohyAG-mlG-3FXlEK7KCp7rWTfxCwhW-aA/edit?usp=sharing)
 
 ## Different Projects
-- [Rag with any Website](Langchain_streamlit_rag)]
+- [Rag with any Website](Langchain_streamlit_rag)
