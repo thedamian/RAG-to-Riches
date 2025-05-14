@@ -1,9 +1,17 @@
 # RAG to Riches: Building Chatbots with Company Knowledge
 
-![presentationImage](Presentation/EventPicture.png)
+![presentationImage](EventPicture.png)
 
 ## Presentation slides
 - [Google Slides](https://docs.google.com/presentation/d/1KPNZQNOGFbohyAG-mlG-3FXlEK7KCp7rWTfxCwhW-aA/edit?usp=sharing)
 
-## Different Projects
-- [Rag with any Website](Langchain_streamlit_rag)
+## Projects
+- Basic StreamLit - ```src/1-bvasicStreamLit.py```
+- Basic LLM       - ```/2-basicllm.py```
+- RAG with Text   - ```src/3.ragText.py```
+- RAG with PDF    - ```src/4-ragPDF.py```
+- RAG with Website - ```src/5-ragWebsite.py```
+
+## How to run the projects:
+
+```uv run streamlit run YOUR_PROJECT_SCRIPT```

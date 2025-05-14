@@ -6,4 +6,5 @@ google-generativeai
 faiss-cpu
 beautifulsoup4
 requests
+PyMuPDF 
 lxml

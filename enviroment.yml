@@ -10,5 +10,7 @@ dependencies:
 - google-generativeai
 - faiss-cpu
 - beautifulsoup4
+- PyMuPDF 
 - requests
 - lxml
+

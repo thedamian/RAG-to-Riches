@@ -26,7 +26,7 @@ def load_and_index_website(url):
 
 def create_conversational_chain(vectorstore):
     """Creates a conversational retrieval chain using Gemini Flash."""
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", convert_system_message_to_human=True) #Use gemini flash
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-preview-04-17", convert_system_message_to_human=True) #Use gemini flash
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     chain = ConversationalRetrievalChain.from_llm(
         llm=llm,

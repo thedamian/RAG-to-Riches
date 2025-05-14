@@ -1,0 +1,16 @@
+name: Codespace Setup
+on:
+  push:
+    branches: [main]  # Or your main branch
+  pull_request:
+    branches: [main]
+jobs:
+  setup:
+    runs-on: ubuntu-latest  # Or your preferred runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run Script
+        run: |
+          echo "Installing UV"
+          curl -LsSf https://astral.sh/uv/install.sh | sh
