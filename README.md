@@ -14,7 +14,7 @@
 
 ## How to run the projects:
 
-first, install uv:
+Optionally: Install uv:
 ```curl -LsSf https://astral.sh/uv/install.sh | sh```
 
 Then for each project:
