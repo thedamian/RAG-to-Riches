@@ -1,1 +1,1 @@
-uv run streamlit run src/ragWebsite.py --server.port=5000
+uv run streamlit run src/1-basicStreamLit.py --server.port=5000
