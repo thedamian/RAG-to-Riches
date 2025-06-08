@@ -21,7 +21,7 @@ weather_tool = Tool(
 )
 
 # Initialize LangChain's OpenAI-compatible wrapper for Gemini
-llm = ChatOpenAI(openai_api_base="https://generativelanguage.googleapis.com/v1beta", openai_api_key=google_api_key, model_name="gemini-2.5-flash-preview-04-17", temperature=0.7)
+llm = ChatOpenAI(openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/", openai_api_key=google_api_key, model_name="gemini-2.5-flash-preview-04-17", temperature=0.7)
 
 # Initialize LangChain agent with the weather tool
 agent = initialize_agent(
