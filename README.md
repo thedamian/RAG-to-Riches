@@ -14,4 +14,8 @@
 
 ## How to run the projects:
 
+Optionally: Install uv:
+```curl -LsSf https://astral.sh/uv/install.sh | sh```
+
+Then for each project:
 ```uv run streamlit run YOUR_PROJECT_SCRIPT```
