@@ -8,6 +8,12 @@ from langchain.tools import Tool
 google_api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=google_api_key)
 
+#Open AI API key for LangChain
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
+#Llama API key for LangChain
+LLAMA_API_KEY = st.secrets["LLAMA_API_KEY"]
+
 # Define function to return hardcoded temperature
 def getWeatherByCity(city):
     print (f"\nReceived tooling request for weather in {city}")
@@ -20,14 +26,21 @@ weather_tool = Tool(
     description="Returns the temperature for a given city."
 )
 
-# Initialize LangChain's OpenAI-compatible wrapper for Gemini
-llm = ChatOpenAI(openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/", openai_api_key=google_api_key, model_name="gemini-2.5-flash-preview-04-17", temperature=0.7)
+# Google Gemini LLM configuration
+#llm = ChatOpenAI(openai_api_base="https://generativelanguage.googleapis.com/v1beta/", openai_api_key=google_api_key, model_name="gemini-2.5-flash-preview-05-20")
+
+# Open AI LLM configuration
+llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name="gpt-4.1")
+
+# Meta's Llama 4 LLM configuration
+#llm = ChatOpenAI(openai_api_base="https://api.llama.com/v1/",openai_api_key=LLAMA_API_KEY, model_name="Llama-4-Maverick-17B-128E-Instruct-FP8")
 
 # Initialize LangChain agent with the weather tool
 agent = initialize_agent(
     tools=[weather_tool],
     llm=llm,
     agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    handle_parsing_errors=True,
     verbose=True
 )
 
