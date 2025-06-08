@@ -15,4 +15,5 @@ dependencies = [
     "requests",
     "lxml",
     "pymupdf>=1.25.5",
+    "openai>=1.84.0",
 ]
